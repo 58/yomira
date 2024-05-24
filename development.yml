@@ -1,0 +1,11 @@
+services:
+  rails:
+    build:
+        context: ./rails
+        dockerfile: Dockerfile.dev
+    environment:
+      APP_ENV: development
+
+networks:
+  default:
+    name: development
